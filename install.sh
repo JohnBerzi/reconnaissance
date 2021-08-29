@@ -6,6 +6,7 @@ apt install python3-pip -y
 git clone https://github.com/aboul3la/Sublist3r.git
 python3 -m pip install -r Sublist3r/requirements.txt
 sed -i "s/query(host/resolve(host/g" ./Sublist3r/sublist3r.py
+sed -i "s/csrf_regex.findall(resp)[0]/csrf_regex.search(resp).group(0)/g"
 
 # Installing Altdns
 apt install altdns -y
