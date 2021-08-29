@@ -5,7 +5,7 @@ apt install python3-pip -y
 # Installing Sublist3r
 git clone https://github.com/aboul3la/Sublist3r.git
 python3 -m pip install -r Sublist3r/requirements.txt
-sed -i "s/query(host/resolve(host/g" Sublist3r/sublist3r.py
+sed -i "s/query(host/resolve(host/g" ./Sublist3r/sublist3r.py
 
 # Installing Altdns
 apt install altdns -y
@@ -16,8 +16,7 @@ tar -xvf assetfinder-linux-amd64-0.1.0.tgz
 rm -rf assetfinder-linux-amd64-0.1.0.tgz
 
 # Installing Findomain
-wget https://github.com/Findomain/Findomain/releases/download/4.0.1/findomain-linux-amd64  
-mv findomain-linux-amd64 findomain-linux 
+wget https://github.com/findomain/findomain/releases/latest/download/findomain-linux
 chmod +x findomain-linux 
 # METHOD 2:
 #apt install cargo
