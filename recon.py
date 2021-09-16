@@ -135,7 +135,10 @@ def main():
     subdomainTake = False
 
     ## Making The Main Directory With Domain Name
-    os.system(f'mkdir -p ./{sys.argv[-1]}')
+    if sys.argv[-1] == '-h' or sys.argv[-1] == '--help':
+        pass
+    else:
+        os.system(f'mkdir -p ./{sys.argv[-1]}')
     
     opts , args = getopt.getopt(sys.argv[1:],"hasxpcd:", ["help","all","subdomains","screenshots","portscan","subdomain-takeover","date="])
     for o,a in opts :
