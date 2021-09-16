@@ -66,7 +66,7 @@ def subscraperScan(domain,date):
 
 def githubSubScan(domain,date):
     print(f'{Fore.CYAN}[-] Starting github-subdomains.py{Style.RESET_ALL}')
-    os.system(f'python3 github-subdomains.py -t "41c6c6d9a046c0b1329dfbaa478f14204cef84b7" -d {domain} >> {domain}/{date}/subdomain.txt')
+    os.system(f'python3 github-subdomains.py -t "<token>" -d {domain} >> {domain}/{date}/subdomain.txt')
     print(f'{Fore.GREEN}[+] Finished github-subdomains.py{Style.RESET_ALL}') 
 
 def amassScan(domain,date):
