@@ -23,10 +23,10 @@ def usage():
 
 ############# Subdomain Enumeration Functions ##############
 
-def sublisterScan(domain,date):
-    print(f'{Fore.CYAN}[-] Starting Sublist3r{Style.RESET_ALL}')
-    os.system(f'python3 ./Sublist3r/sublist3r.py -d {domain} -o {domain}/{date}/subdomain.txt >/dev/null')
-    print(f'{Fore.GREEN}[+] Finished Sublist3r{Style.RESET_ALL}')
+#def sublisterScan(domain,date):
+#    print(f'{Fore.CYAN}[-] Starting Sublist3r{Style.RESET_ALL}')
+#    os.system(f'python3 ./Sublist3r/sublist3r.py -d {domain} -o {domain}/{date}/subdomain.txt >/dev/null')
+#    print(f'{Fore.GREEN}[+] Finished Sublist3r{Style.RESET_ALL}')
 
 def assetfinderScan(domain,date):
     print(f'{Fore.CYAN}[-] Starting assetfinder{Style.RESET_ALL}')
@@ -85,7 +85,7 @@ def subdomainEnumeration(domain,date):
     print(f'{Fore.YELLOW}* Subdomain Enumeration:{Style.RESET_ALL}')
     try:
         ## Enumerating With All The Tools
-        sublisterScan(domain,date)
+        #sublisterScan(domain,date)
         assetfinderScan(domain,date)
         #altdnsScan(domain,date)
         findomainScan(domain,date)
