@@ -74,10 +74,14 @@ wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_
 unzip aquatone_linux_amd64.zip
 chmod +x aquatone
 sudo mv aquatone /usr/local/bin/
-rm aquatone_linux_amd64.zip
+rm aquatone_linux_amd64_1.7.0.zip README.md LICENSE.txt
 
 echo "[*] Installing RustScan..."
-cargo install rustscan
+wget https://github.com/bee-san/RustScan/releases/download/2.4.1/rustscan.deb.zip
+unzip rustscan.deb.zip
+sudo dpkg -i rustscan_2.4.1-1_amd64.deb
+rm rustscan_2.4.1-1_amd64.deb rustscan.tmp0-stripped rustscan.deb.zip
+
 
 echo
 echo "[✓] All tools installed successfully!"
