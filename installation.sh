@@ -70,7 +70,7 @@ sudo mv findomain /usr/local/bin/
 rm findomain-linux.zip
 
 echo "[*] Installing Aquatone..."
-wget https://github.com/michenriksen/aquatone/releases/latest/download/aquatone_linux_amd64.zip
+wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
 unzip aquatone_linux_amd64.zip
 chmod +x aquatone
 sudo mv aquatone /usr/local/bin/
